@@ -1,0 +1,8 @@
+<div>
+  <ng-template #tooltipTemplate>
+    You clicked button {{ name }}.
+  </ng-template>
+  <button type="button" tooltipManager [ngbTooltip]="tooltipTemplate" triggers="manual" container="body" class="btn btn-primary btn-lg btn-block">
+    {{ name }}
+  </button>
+</div>
